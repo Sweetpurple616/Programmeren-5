@@ -34,6 +34,8 @@ module.exports.datastores = {
 
   default: {
 
+      //adapter: require('sails-mysql'),
+      //url: 'mysql://localhost:3306/testDB',
     /***************************************************************************
     *                                                                          *
     * Want to use a different database during development?                     *
@@ -48,8 +50,9 @@ module.exports.datastores = {
     *    (See https://sailsjs.com/config/datastores for help.)                 *
     *                                                                          *
     ***************************************************************************/
-    // adapter: 'sails-mysql',
-    // url: 'mysql://user:password@host:port/database',
+
+    adapter: require('sails-mysql'),
+    url: 'mysql://root:squ1ddy@localhost:3306/my_dev_db_name',
 
   },
 
