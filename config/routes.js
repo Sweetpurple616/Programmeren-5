@@ -15,6 +15,7 @@ module.exports.routes = {
   //  ║║║║╣ ╠╩╗╠═╝╠═╣║ ╦║╣ ╚═╗
   //  ╚╩╝╚═╝╚═╝╩  ╩ ╩╚═╝╚═╝╚═╝
   'GET /':                   { action: 'view-homepage-or-redirect' },
+  'GET /hoi':                { action: 'dashboard/view-welcome' }, //test
   'GET /welcome':            { action: 'dashboard/view-welcome' },
 
   'GET /faq':                { view:   'pages/faq' },
