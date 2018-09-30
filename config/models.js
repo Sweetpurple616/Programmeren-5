@@ -35,7 +35,7 @@ module.exports.models = {
   *                                                                          *
   ***************************************************************************/
 
-  schema: true,
+  // schema: true,
 
 
   /***************************************************************************
@@ -53,11 +53,7 @@ module.exports.models = {
   *                                                                          *
   ***************************************************************************/
 
-<<<<<<< HEAD
-  migrate: 'alter',
-=======
-  //migrate: 'alter',
->>>>>>> parent of 1f7ea62... DB WERKT!!!
+  // migrate: 'alter',
 
 
   /***************************************************************************
@@ -105,7 +101,7 @@ module.exports.models = {
   ******************************************************************************/
 
   dataEncryptionKeys: {
-    default: 'th93f7O3Hh1sEMEELVSiZu6JGfOU2QJ+pKuOt8/ERf8='
+    default: 't3/gmvUaVFhnC0wD7Mn1SWDPOjCCH9DFe0KFgVfPwn4='
   },
 
 
