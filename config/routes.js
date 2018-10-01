@@ -28,6 +28,15 @@ module.exports.routes = {
     view: 'pages/homepage'
   },
 
+  // '/control': {
+  //   view:       'new',
+  //   controller: 'PhotosController',
+  //   action:     'new',
+
+
+  // },
+  'get /show': 'photos.show',
+
   /***************************************************************************
   *                                                                          *
   * More custom routes here...                                               *
