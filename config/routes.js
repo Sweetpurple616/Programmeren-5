@@ -35,7 +35,9 @@ module.exports.routes = {
 
 
   // },
-  'get /show': 'photos.show',
+  'get /photos/show': 'photos.show',
+  'get /photos/add' : 'photos.add',
+  'post /photos/create' : 'photos.create',
 
   /***************************************************************************
   *                                                                          *

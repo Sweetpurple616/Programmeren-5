@@ -13,7 +13,20 @@ module.exports = {
       }
       res.view('show', {photos:photos});
     });
-  }
+  },
+  'add':function(req, res){
+    res.view('add');
+  },
+  'create':function(req, res){
+    var name = req.body.name;
+    var description = req.body.description;
 
+    Photos.create({name:name, description:description }).exec((err) => {
+      if(err){
+        res.send(500, {error: 'Database Error'});
+      }
+      res.redirect('/photos');
+    });
+  },
 };
 
