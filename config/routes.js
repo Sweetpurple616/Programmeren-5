@@ -38,6 +38,7 @@ module.exports.routes = {
   'get /photos/show': 'photos.show',
   'get /photos/add' : 'photos.add',
   'post /photos/create' : 'photos.create',
+  'post /photos/delete/id' : 'photos.delete',
 
   /***************************************************************************
   *                                                                          *

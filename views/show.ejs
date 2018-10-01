@@ -1,4 +1,7 @@
 <title>SHOW!</title>
+<ul>
 <% photos.forEach(function(photo){%>
-<label> <%= photo.id %> </label>
+<li> <%= photo.id %>  <a href=/photos/delete/<%= photo.id %>>link</a> </li>
+
 <% }) %>
+</ul>   
