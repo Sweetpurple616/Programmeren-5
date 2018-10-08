@@ -27,6 +27,11 @@ module.exports.routes = {
   '/': {
     view: 'homepage'
   },
+  '/profile': {
+    controller: 'UserController',
+    action: 'render' },
+  '/rate': { view: 'rate'},
+  '/upload': { view: 'upload'},
   'get /signup' : {view: 'pages/signup'} ,
   'POST /user/login': { action: 'user/login'} ,
 

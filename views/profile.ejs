@@ -1,0 +1,25 @@
+<% include partials/menu %>
+
+<div class="ui container">
+<h1 class="ui centered header">Profile Updated!</h1>
+<hr>
+<div class="section">
+    <div class="ui grid">
+      <form action="<%= '/user/update/'+  data.id %>" method="post" class="ui centered form">
+        <div class="field">
+          <label>Name</label>
+          <input type="text" name="name" value="<%= data.fullname %>">
+        </div>
+        <div class="field">
+          <label>Email</label>
+          <input type="text" name="email" value="<%= data.email %>">
+        </div>
+        <div class="field">
+          <label>Password</label>
+          <input type="text" name="password" value="<%= data.password %>">
+        </div>
+        <button class="ui right floated  orange button" type="submit">Update</button>
+      </form>
+    </div>
+</div>
+</div>

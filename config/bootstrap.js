@@ -10,7 +10,7 @@
  */
 
 module.exports.bootstrap = async function(done) {
-
+  sails.config.appName = 'Sails Photo App';
   // By convention, this is a good place to set up fake data during development.
   //
   // For example:

@@ -8,7 +8,14 @@
 module.exports = {
 
   attributes: {
-
+    
+    fullname: {
+      type: 'string',
+      required: true,
+      description: 'Full representation of the user\'s name',
+      maxLength: 120,
+      example: 'Cool Beans'
+    },
     email: {
       type: 'string',
       unique: true,
@@ -23,13 +30,7 @@ module.exports = {
       protect: true,
       example: '2$28a8eabna301089103-13948134nad'
     },
-    fullname: {
-      type: 'string',
-      required: true,
-      description: 'Full representation of the user\'s name',
-      maxLength: 120,
-      example: 'Cool Beans'
-    },
+
     isAdmin: {
       type: 'boolean',
       description: 'Is the user a admin.',
