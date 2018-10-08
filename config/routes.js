@@ -27,7 +27,7 @@ module.exports.routes = {
   '/': {
     view: 'homepage'
   },
-  '/profile': {
+  'get /profile': {
     controller: 'UserController',
     action: 'render' },
   '/rate': { view: 'rate'},
