@@ -25,8 +25,9 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': {
-    view: 'pages/homepage'
+    view: 'pages/signup'
   },
+  'get /signup':             { view: 'pages/signup' },
 
   // '/control': {
   //   view:       'new',
