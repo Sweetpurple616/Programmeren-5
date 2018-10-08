@@ -15,10 +15,6 @@ module.exports = {
     description: {
       type: 'string'
     },
-    photo: {
-      collection: 'photos',
-      via: 'catergory',
-    }
 
 
   },

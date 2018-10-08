@@ -23,14 +23,7 @@ module.exports = {
     downvote: {
       type: 'string'
     },
-    catergory: {
-      collection: 'catergories',
-      via:'photo'
-    },
-    user: {
-      collection: 'users',
-      via: 'photo'
-    },
+
   }
 
 };
