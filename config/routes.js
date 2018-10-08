@@ -25,9 +25,10 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': {
-    view: 'pages/signup'
+    view: 'homepage'
   },
-  'get /signup':             { view: 'pages/signup' },
+  'get /signup' : {view: 'pages/signup'} ,
+  'POST /user/login': { action: 'user/login'} ,
 
   // '/control': {
   //   view:       'new',

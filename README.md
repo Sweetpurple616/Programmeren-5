@@ -13,9 +13,8 @@ a [Sails v1](https://sailsjs.com) application
 + [Professional / enterprise options](https://sailsjs.com/enterprise)
 
 
-### Version info
-
-This app was originally generated on Sun Sep 30 2018 16:13:37 GMT+0200 (West-Europa (zomertijd)) using Sails v1.0.2.
+### app idee
+een webapp waar users photo's kunnen uploaden
 
 <!-- Internally, Sails used [`sails-generate@1.15.28`](https://github.com/balderdashy/sails-generate/tree/v1.15.28/lib/core-generators/new). -->
 

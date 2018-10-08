@@ -1,0 +1,22 @@
+{
+  "name": "Programmeren-5",
+  "description": "a Sails application",
+  "main": "app.js",
+  "authors": [
+    "anonymous node/sails user"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Sweetpurple616/Programmeren-5",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "semantic": "semantic-ui#^2.4.0",
+    "jsrender": "^0.9.91"
+  }
+}

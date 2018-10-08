@@ -1,7 +1,7 @@
 module.exports = {
 
 
-  friendlyName: 'Signup',
+ friendlyName: 'Signup',
 
 
   description: 'Signup for account.',
@@ -52,7 +52,7 @@ module.exports = {
 
     return exits.success();
 
-  }
+  } 
 
 
 };

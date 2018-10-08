@@ -16,7 +16,7 @@ module.exports = {
   },
 
   'add':function(req, res){
-    res.view('add');
+    res.view('pages/add');
   },
 
   'create':function(req, res){
