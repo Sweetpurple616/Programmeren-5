@@ -17,12 +17,7 @@ module.exports = {
     file: {
       type: 'string'
     },
-    upvotes: {
-      type: 'string'
-    },
-    downvote: {
-      type: 'string'
-    },
+
 
   }
 

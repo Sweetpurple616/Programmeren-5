@@ -9,7 +9,7 @@ module.exports = {
   render: async (request, response) => {
     try {
       let data = await User.findOne({
-        email: 'jonie86@gmail.com'
+        id: 1
       });
       if (!data) {
         return response.notFound('The user was NOT found!');
@@ -19,6 +19,8 @@ module.exports = {
       response.serverError(err);
     }
   }
+
+  
 
 };
 

@@ -24,28 +24,10 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'homepage'
-  },
-  'get /profile': {
-    controller: 'UserController',
-    action: 'render' },
-  '/rate': { view: 'rate'},
-  '/upload': { view: 'upload'},
-  'get /signup' : {view: 'pages/signup'} ,
-  'POST /user/login': { action: 'user/login'} ,
-
-  // '/control': {
-  //   view:       'new',
-  //   controller: 'PhotosController',
-  //   action:     'new',
-
-
-  // },
-  'get /photos/show': 'photos.show',
-  'get /photos/add' : 'photos.add',
-  'post /photos/create' : 'photos.create',
-  'post /photos/delete/id' : 'photos.delete',
+  '/': { view: 'homepage'},
+  '/upload':{view: 'upload'},
+  '/uploaden':{action: 'upload'},
+  '/rate': {view: 'rate'},
 
   /***************************************************************************
   *                                                                          *

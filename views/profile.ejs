@@ -1,14 +1,14 @@
 <% include partials/menu %>
 
 <div class="ui container">
-<h1 class="ui centered header">Profile Updated!</h1>
+<h1 class="ui centered header">profile Updated!</h1>
 <hr>
 <div class="section">
     <div class="ui grid">
-      <form action="<%= '/user/update/'+  data.id %>" method="post" class="ui centered form">
+      <form action="/user/update/" method="post" class="ui centered form">
         <div class="field">
           <label>Name</label>
-          <input type="text" name="name" value="<%= data.fullname %>">
+          <input type="text" name="fullname" value="<%= data.fullname %>">
         </div>
         <div class="field">
           <label>Email</label>

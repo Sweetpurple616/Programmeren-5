@@ -12,6 +12,7 @@ module.exports = {
       required: true,
       type: 'string',
       isEmail: true,
+      unique: true,
       description: 'Email address for the account',
     },
 
@@ -49,8 +50,8 @@ module.exports = {
 
 
   fn: async function (inputs, exits) {
-
-    return exits.success();
+    var userinfo = await User.create(input);
+    return exits.success(userinfo);
 
   } 
 

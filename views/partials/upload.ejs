@@ -1,0 +1,21 @@
+<form method="post" action="/uploaden" class="ui form">
+    <div class="field">
+      <label>Name</label>
+      <input type="text" name="name" placeholder="Name of the photo" value="<%= typeof name != 'undefined' ? name : '' %>">
+    </div>
+    <div class="required field">
+      <label>Description</label>
+      <input type="text" name="description" placeholder="Description about the photo" value="<%= typeof description != 'undefined' ? description : '' %>">
+    </div>
+    <div class="required field">
+      <label>File</label>
+      <input type="file" name="file" value="<%= typeof file != 'undefined' ? file : '' %>">
+    </div>
+    <button class="ui teal button" type="submit" name="action" value="Submit">submit</button>
+    </form>
+    <% if(typeof error != 'undefined') { %>
+    <div class="ui error message">
+    <div class="header"><%= error.title %></div>
+    <p><%= error.message %></p>
+    </div>
+    <% } %>

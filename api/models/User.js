@@ -8,7 +8,7 @@
 module.exports = {
 
   attributes: {
-    
+
     fullname: {
       type: 'string',
       required: true,
