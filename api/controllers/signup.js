@@ -8,7 +8,7 @@ module.exports = {
 
 
   inputs: {
-    emailAddress: {
+    email: {
       required: true,
       type: 'string',
       isEmail: true,
@@ -55,8 +55,15 @@ module.exports = {
 
 
   fn: async function (inputs, exits) {
-    var userinfo = await User.create(inputs);
-    return exits.success(userinfo);
+
+
+    var newUserRecord = await User.create(Object.assign({
+      email: inputs.email,
+      password: await sails.helpers.passwords.hashPassword(inputs.password),
+      fullname: inputs.fullname}));
+  
+
+    return exits.success(newUserRecord);
 
   }
 

@@ -8,7 +8,7 @@ module.exports = {
 
 
   inputs: {
-    emailAddress: {
+    email: {
       required: true,
       type: 'string',
       isEmail: true,
@@ -30,7 +30,7 @@ module.exports = {
   exits: {
     success:{
       responseType: 'view',
-      viewTemplatePath: 'login.ejs'
+      viewTemplatePath: 'homepage.ejs'
     },
     notFound: {
       description: 'No user with the specified ID was found in the database.',
@@ -45,13 +45,16 @@ module.exports = {
 
 
   fn: async function (inputs, exits) {
-    var user = await User.findOne({emailAddress: inputs.emailAddress});
+    var user = await User.findOne({email: inputs.email});
     if (!user) { return exits.notFound(); }
-    if (user.password !== inputs.password){
-      return exits.passwordInvalid();
-    }
+    sails.log('login');
+    await sails.helpers.passwords.checkPassword(inputs.password, user.password)
+    .intercept('passwordInvalid', 'notFound');
 
-    return exits.success({id: user.id});
+    this.req.session.userId = user.id;
+
+
+    return exits.success();
 
   }
 

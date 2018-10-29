@@ -31,6 +31,7 @@ module.exports.routes = {
     action: 'rate'},
   '/signup' :{view: 'signup'},
   '/sign' :{action: 'signup'},
+  '/log' :{action : 'login'}
 
 
 
