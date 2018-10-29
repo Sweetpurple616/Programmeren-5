@@ -28,6 +28,23 @@ module.exports.seeds = {
       password: 'et25yudrg',
       isAdmin: 'true',
     }
+  ],
+  photos: [
+    {
+      name: 'photo',
+      description: 'sfefew',
+      file: '/assets/images/banaan.png',
+    },
+    {
+      name: 'photoeen',
+      description: 'fsefesgrdfvfdf',
+      file: '../assets/images/banaan.png',
+    },
+    {
+      name: 'phototwee',
+      description: 'deadfesf',
+      file: '/assets/images/banaan.png',
+    },
   ]
 };
 

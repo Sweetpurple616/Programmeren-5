@@ -1,0 +1,18 @@
+<% include partials/menu %>
+<div class="ui container">
+    <h1 class="ui centered header">Photos!</h1>
+    <table>
+    <% alldata.forEach(function(photo) { %>
+        <tr>
+        <td><img src="<%= photo.file %>"></td>
+        <td><%= photo.name %></td>
+        <td><%= photo.description %></td>
+
+        </tr>
+        <% }); %>
+    </table>
+    <div class="section">
+        <div class="ui grid">
+        </div>
+    </div>
+    </div>

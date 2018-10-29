@@ -30,7 +30,7 @@ module.exports = {
   exits: {
     success:{
       responseType: 'view',
-      viewTemplatePath: 'homepage.ejs'
+      viewTemplatePath: 'upload.ejs'
     },
     notFound: {
       description: 'No user with the specified ID was found in the database.',
@@ -52,7 +52,6 @@ module.exports = {
     .intercept('passwordInvalid', 'notFound');
 
     this.req.session.userId = user.id;
-
 
     return exits.success();
 
