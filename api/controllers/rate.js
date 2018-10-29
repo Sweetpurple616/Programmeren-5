@@ -6,11 +6,11 @@
 
 
 /**
- * signup2.js
+ * rate.js
  *
- * Signup 2.
+ * Rate something.
  */
-module.exports = async function signup2(req, res) {
+module.exports = async function rate(req, res) {
 
   sails.log.debug('TODO: implement');
   return res.ok();

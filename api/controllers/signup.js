@@ -1,7 +1,7 @@
 module.exports = {
 
 
- friendlyName: 'Signup',
+  friendlyName: 'Signup',
 
 
   description: 'Signup for account.',
@@ -24,7 +24,7 @@ module.exports = {
       description: 'The unencrypted password to use for the new account.'
     },
 
-    fullName:  {
+    fullname:  {
       required: true,
       type: 'string',
       example: 'Cool beans',
@@ -46,14 +46,19 @@ module.exports = {
       statusCode: 409, //conflict code
       description: 'input email address is already in use.',
     },
+    success:{
+      responseType: 'view',
+      viewTemplatePath: 'login.ejs'
+    },
   },
 
 
+
   fn: async function (inputs, exits) {
-    var userinfo = await User.create(input);
+    var userinfo = await User.create(inputs);
     return exits.success(userinfo);
 
-  } 
+  }
 
 
 };

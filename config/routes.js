@@ -27,7 +27,12 @@ module.exports.routes = {
   '/': { view: 'homepage'},
   '/upload':{view: 'upload'},
   '/uploaden':{action: 'upload'},
-  '/rate': {view: 'rate'},
+  '/rate': {view: 'rate',
+    action: 'rate'},
+  '/signup' :{view: 'signup'},
+  '/sign' :{action: 'signup'},
+
+
 
   /***************************************************************************
   *                                                                          *
