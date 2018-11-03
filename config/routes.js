@@ -39,6 +39,9 @@ module.exports.routes = {
   'get /admin': {
     controller: 'PhotosController',
     action: 'admin' },
+  'get /delete': {
+    controller: 'UserController',
+    action: 'delete' }
 
 
   /***************************************************************************

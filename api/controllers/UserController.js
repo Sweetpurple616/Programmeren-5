@@ -18,9 +18,10 @@ module.exports = {
     } catch (err) {
       response.serverError(err);
     }
+  },
+  delete: async (request, response) => {
+    await User.destroy({id: request.session.userId});
+    response.view('homepage');
   }
-
-
-
 };
 
