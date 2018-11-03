@@ -31,8 +31,8 @@ module.exports.routes = {
     action: 'rate'},
   '/signup' :{view: 'signup'},
   '/sign' :{action: 'signup'},
+  '/login':{view: 'login'},
   '/log' :{action : 'login'},
-  '/admin' :{view: 'admin'},
   'get /profile': {
     controller: 'UserController',
     action: 'render' },

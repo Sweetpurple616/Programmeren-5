@@ -10,10 +10,10 @@
 module.exports.seeds = {
   user: [
     {
-      fullname: 'John Wayne',
-      email: 'johnnie86@gmail.com',
-      password: '213124gfreg',
-      isAdmin: 'false',
+      fullname: 'zoe',
+      email: 'zoedewaard@hotmail.nl',
+      password: '$2a$10$78eDkgJz28/VOCUG7j4PKOEKpv9lEVwK8VsNlpnUJlWkvUifhvVyy',
+      isAdmin: 'true',
     },
     {
       fullname: 'Peter Quinn',

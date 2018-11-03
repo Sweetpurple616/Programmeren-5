@@ -18,5 +18,11 @@ module.exports.policies = {
   ***************************************************************************/
 
   // '*': true,
+  '*': 'isLoggedIn',
+  PhotosController: {
+    admin: 'isAdmin'},
+  'login': true,
+  'signup': true,
+
 
 };
