@@ -8,7 +8,7 @@ module.exports = {
 
 
   inputs: {
-    emailAddress: {
+    email: {
       required: true,
       type: 'string',
       isEmail: true,
@@ -23,7 +23,7 @@ module.exports = {
       description: 'The unencrypted password.'
     },
 
-    fullName:  {
+    fullname:  {
       required: true,
       type: 'string',
       example: 'Cool beans',
@@ -33,11 +33,20 @@ module.exports = {
 
 
   exits: {
+    success:{
+      responseType: 'view',
+      viewTemplatePath: 'upload.ejs'
+    },
   },
 
 
   fn: async function (inputs, exits) {
-    await User.update(inputs);
+    sails.log('update');
+    await User.update({id:inputs.id})
+    .set({fullname: inputs.fullname},
+      {email: inputs.email},
+      {password: inputs.password });
+
     return exits.success();
 
   }
