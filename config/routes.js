@@ -33,6 +33,7 @@ module.exports.routes = {
   '/sign' :{action: 'signup'},
   '/login':{view: 'login'},
   '/log' :{action : 'login'},
+  '/toggle':{action: 'toggle'},
   'get /profile': {
     controller: 'UserController',
     action: 'render' },

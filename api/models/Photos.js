@@ -17,6 +17,9 @@ module.exports = {
     file: {
       type: 'string'
     },
+    state:{
+      type: 'boolean'
+    },
 
 
   }

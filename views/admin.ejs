@@ -7,8 +7,20 @@
         <td><img src="<%= photo.file %>"></td>
         <td><%= photo.name %></td>
         <td><%= photo.description %></td>
-        <td><button class="ui button"></button></td>
-
+        <form action="/toggle" method="post">
+        <input type="hidden" name="id" value="<%= photo.id %>">
+        <td><button type="submit" name="state" value="<%= photo.state %>" class="ui <% if (!photo.state){ %> 
+                red
+            <% } %> button">
+            
+            <% if (photo.state){ %> 
+                Active 
+            <% } else{ %>
+            Not Active 
+            <% } %>
+        
+        </button></td>
+        </form>
         </tr>
         <% }); %>
     </table>
