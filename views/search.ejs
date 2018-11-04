@@ -1,14 +1,12 @@
 <% include partials/menu %>
 
 <div class="ui container">
-        <h1 class="ui centered header"><%=search %> !</h1>
         <form method="post" action="/search">
             <div>
-                            <input type="text" name="test" value="test">
+                            <input type="text" name="<%search%>" value="<%=search%>">
                             <input type='checkbox' name='catergory' value="funny">Funny
                             <input type='checkbox' name='catergory' value="awesome">Awesome
                             <input type='checkbox' name='catergory' value="games">Games
-                        <input type="hidden" name="search" value="<%=search%>">
             <button class="ui button"><i class="search icon" ></i></button>
         </form>
         <div class="section">

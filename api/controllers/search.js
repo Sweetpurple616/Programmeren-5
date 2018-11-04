@@ -12,7 +12,7 @@ module.exports = {
       type:'string'
     },
     catergory:{
-      type:'string',
+      type:'ref',
     },
   },
 
