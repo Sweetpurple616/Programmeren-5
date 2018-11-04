@@ -13,7 +13,7 @@ module.exports.seeds = {
       fullname: 'zoe',
       email: 'zoedewaard@hotmail.nl',
       password: '$2a$10$78eDkgJz28/VOCUG7j4PKOEKpv9lEVwK8VsNlpnUJlWkvUifhvVyy',
-      isAdmin: 'true',
+      isAdmin: 'false',
       timesLoggedin: 4,
     },
     {

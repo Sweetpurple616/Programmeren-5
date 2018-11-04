@@ -30,6 +30,7 @@ module.exports = function dataNotVal(errorMSG) {
 
   var req = this.req;
   var res = this.res;
+  sails.log('ik ben er');
   sails.log(errorMSG);
   res.view('login', { errorMSG });
 

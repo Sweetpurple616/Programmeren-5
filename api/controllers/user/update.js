@@ -37,6 +37,11 @@ module.exports = {
       responseType: 'view',
       viewTemplatePath: 'upload.ejs'
     },
+    redirect: {
+      description: 'The requesting user agent looks to be a web browser.',
+      extendedDescription: 'After logging out from a web browser, the user is redirected away.',
+      responseType: 'redirect'
+    },
   },
 
 
@@ -47,7 +52,7 @@ module.exports = {
       {email: inputs.email},
       {password: inputs.password });
 
-    return exits.success();
+    throw {redirect: '/profile'};
 
   }
 

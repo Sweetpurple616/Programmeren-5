@@ -31,6 +31,9 @@ module.exports = {
     somethingHappened: {
       responseType: 'dataNotVal'
     },
+    incorrect: {
+      responseType: 'dataNotVal'
+    },
     success:{
       responseType: 'view',
       viewTemplatePath: 'upload.ejs'
@@ -56,7 +59,8 @@ module.exports = {
     }
     sails.log('login');
     await sails.helpers.passwords.checkPassword(inputs.password, user.password)
-    .intercept('somethingHappend', 'passwordInvalid');
+    //.intercept('incorrect', 'somethingHappend');
+
     user.timesLoggedin = user.timesLoggedin + 1;
     await User.update({email: inputs.email})
     .set({timesLoggedin: user.timesLoggedin});
