@@ -45,6 +45,7 @@ module.exports.routes = {
     action: 'delete' },
 
   '/search':{action:'search'},
+  '/logout':{action:'logout'}
 
 
   /***************************************************************************
