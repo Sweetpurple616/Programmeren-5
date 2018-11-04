@@ -37,8 +37,8 @@ module.exports.seeds = {
       state: 'false'
     },
     {
-      name: 'photoeen',
-      description: 'fsefesgrdfvfdf',
+      name: 'sdasd',
+      description: 'photo',
       file: '../assets/images/banaan.png',
       state: 'true'
     },

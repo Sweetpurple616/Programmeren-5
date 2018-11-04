@@ -2,6 +2,9 @@
 <div class="ui container">
     <h1 class="ui centered header">Photos!</h1>
     <table class="ui celled table">
+            <th>photo</th>
+            <th>name</th>
+            <th>description</th>
     <% alldata.forEach(function(photo) { %>
         <tr>
         <td><img src="<%= photo.file %>"></td>

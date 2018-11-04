@@ -42,7 +42,9 @@ module.exports.routes = {
     action: 'admin' },
   'get /delete': {
     controller: 'UserController',
-    action: 'delete' }
+    action: 'delete' },
+
+  '/search':{action:'search'},
 
 
   /***************************************************************************

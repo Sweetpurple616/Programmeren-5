@@ -1,0 +1,25 @@
+<% include partials/menu %>
+
+<div class="ui container">
+        <h1 class="ui centered header"><%=search %> !</h1>
+        <hr>
+        <div class="section">
+          <% if (result.length === 0){ %>
+            <label>No results!</label>
+          <% } else { %>
+            <table class="ui celled table">
+                <th>photo</th>
+                <th>name</th>
+                <th>description</th>
+            <% result.forEach(function(photo) { %> 
+        <tr>
+                <td><img src="<%= photo.file %>"></td>
+                <td><%= photo.name %></td>
+                <td><%= photo.description %></td>
+            </tr>
+
+          <% }); %> </table> <% } %>
+            <div class="ui grid">  
+            </div>
+        </div>
+        </div>
