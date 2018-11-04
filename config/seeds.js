@@ -34,19 +34,22 @@ module.exports.seeds = {
       name: 'photo',
       description: 'sfefew',
       file: '/assets/images/banaan.png',
-      state: 'false'
+      state: 'false',
+      catergory: 'funny'
     },
     {
       name: 'sdasd',
       description: 'photo',
       file: '../assets/images/banaan.png',
-      state: 'true'
+      state: 'true',
+      catergory: 'games'
     },
     {
       name: 'phototwee',
       description: 'deadfesf',
       file: '/assets/images/banaan.png',
-      state: 'true'
+      state: 'true',
+      catergory: 'awesome'
     },
   ]
 };

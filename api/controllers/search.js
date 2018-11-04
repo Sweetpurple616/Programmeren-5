@@ -11,6 +11,9 @@ module.exports = {
     search:{
       type:'string'
     },
+    catergory:{
+      type:'string',
+    },
   },
 
 
@@ -29,8 +32,17 @@ module.exports = {
         {description: inputs.search}
       ]
     });
-    sails.log(inputs.search);
+    sails.log(inputs);
     sails.log(searchresult);
+    if (inputs.catergory){
+      searchresult = await Photos.find({
+        catergory: inputs.catergory,
+      });
+
+    }
+
+    //sails.log(inputs.search);
+    //sails.log(searchresult);
     return exits.success({search: inputs.search, result: searchresult});
 
   }

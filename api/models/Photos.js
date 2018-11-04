@@ -20,6 +20,9 @@ module.exports = {
     state:{
       type: 'boolean'
     },
+    catergory:{
+      type: 'string'
+    },
 
 
   }
