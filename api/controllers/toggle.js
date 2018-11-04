@@ -23,7 +23,11 @@ module.exports = {
       responseType: 'view',
       viewTemplatePath: 'upload.ejs'
     },
-
+    redirect: {
+      description: 'The requesting user agent looks to be a web browser.',
+      extendedDescription: 'After logging out from a web browser, the user is redirected away.',
+      responseType: 'redirect'
+    },
   },
 
 
@@ -33,6 +37,7 @@ module.exports = {
     sails.log(inputs.state);
     await Photos.update({id: inputs.id})
     .set({state: state});
+    throw {redirect: '/admin'};
     return exits.success();
 
   }
