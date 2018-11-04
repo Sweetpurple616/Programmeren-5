@@ -14,12 +14,14 @@ module.exports.seeds = {
       email: 'zoedewaard@hotmail.nl',
       password: '$2a$10$78eDkgJz28/VOCUG7j4PKOEKpv9lEVwK8VsNlpnUJlWkvUifhvVyy',
       isAdmin: 'true',
+      timesLoggedin: 4,
     },
     {
       fullname: 'Peter Quinn',
       email: 'peter.quinn@live.com',
       password: '2wr3425reg',
       isAdmin: 'false',
+      timesLoggedin: 3,
 
     },
     {
@@ -27,6 +29,7 @@ module.exports.seeds = {
       email: 'jane@hotmail.com',
       password: 'et25yudrg',
       isAdmin: 'true',
+      timesLoggedin: 5,
     }
   ],
   photos: [

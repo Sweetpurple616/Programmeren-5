@@ -30,11 +30,13 @@ module.exports = {
       protect: true,
       example: '2$28a8eabna301089103-13948134nad'
     },
-
     isAdmin: {
       type: 'boolean',
       description: 'Is the user a admin.',
-    }
+    },
+    timesLoggedin: {
+      type: 'number',
+    },
   },
 };
 

@@ -50,6 +50,9 @@ module.exports = {
     sails.log('login');
     await sails.helpers.passwords.checkPassword(inputs.password, user.password)
     .intercept('passwordInvalid', 'notFound');
+    user.timesLoggedin = user.timesLoggedin + 1;
+    await User.update({email: inputs.email})
+    .set({timesLoggedin: user.timesLoggedin});
 
     this.req.session.userId = user.id;
 

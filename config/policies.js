@@ -19,6 +19,7 @@ module.exports.policies = {
 
   // '*': true,
   '*': 'isLoggedIn',
+  'upload' : 'timesLoggedin',
   PhotosController: {
     admin: 'isAdmin'},
   'login': true,
