@@ -1,17 +1,17 @@
 <form method="post" action="/log" class="ui form">
     <div class="required field">
       <label>Email</label>
-      <input type="email" name="email" placeholder="Email" value="<%= typeof email != 'undefined' ? email : '' %>">
+      <input type="email" name="email" placeholder="Email" value="">
     </div>
     <div class="required field">
       <label>Password</label>
-      <input type="password" name="password" placeholder="Password" value="<%= typeof email != 'undefined' ? password : '' %>">
+      <input type="password" name="password" placeholder="Password" value="">
     </div>
     <button class="ui teal button" type="submit" name="action" value="Login">Login</button>
     </form>
-    <% if(typeof error != 'undefined') { %>
+    <% if (typeof errorMSG != 'undefined') { %>
     <div class="ui error message">
-    <div class="header"><%= error.title %></div>
-    <p><%= error.message %></p>
+    <div class="header"></div>
+      <h1><%= errorMSG %> </h1>
     </div>
     <% } %>
