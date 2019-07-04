@@ -1,0 +1,46 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-450202:
+    - sails > machinepack-redis > async > lodash:
+        patched: '2019-07-04T03:08:13.237Z'
+    - async > lodash:
+        patched: '2019-07-04T03:08:13.237Z'
+    - sails-hook-orm > async > lodash:
+        patched: '2019-07-04T03:08:13.237Z'
+    - sails-hook-sockets > async > lodash:
+        patched: '2019-07-04T03:08:13.237Z'
+    - sails-mysql > async > lodash:
+        patched: '2019-07-04T03:08:13.237Z'
+    - grunt > grunt-legacy-log > lodash:
+        patched: '2019-07-04T03:08:13.237Z'
+    - sails > async > lodash:
+        patched: '2019-07-04T03:08:13.237Z'
+    - sails-hook-orm > waterline > encrypted-attr > lodash:
+        patched: '2019-07-04T03:08:13.237Z'
+    - sails-hook-orm > waterline-utils > async > lodash:
+        patched: '2019-07-04T03:08:13.237Z'
+    - sails-hook-organics > mailgun-js > async > lodash:
+        patched: '2019-07-04T03:08:13.237Z'
+    - sails-hook-organics > async > lodash:
+        patched: '2019-07-04T03:08:13.237Z'
+    - sails-hook-orm > waterline > async > lodash:
+        patched: '2019-07-04T03:08:13.237Z'
+    - sails-hook-sockets > machinepack-redis > async > lodash:
+        patched: '2019-07-04T03:08:13.237Z'
+    - sails > sails-generate > async > lodash:
+        patched: '2019-07-04T03:08:13.237Z'
+    - sails > skipper > async > lodash:
+        patched: '2019-07-04T03:08:13.237Z'
+    - sails-mysql > waterline-utils > async > lodash:
+        patched: '2019-07-04T03:08:13.237Z'
+    - sails-hook-orm > sails-disk > async > lodash:
+        patched: '2019-07-04T03:08:13.237Z'
+    - sails-hook-orm > waterline > waterline-utils > async > lodash:
+        patched: '2019-07-04T03:08:13.237Z'
+    - sails-mysql > machinepack-mysql > waterline-sql-builder > knex > lodash:
+        patched: '2019-07-04T03:08:13.237Z'
+    - sails-mysql > machinepack-mysql > waterline-sql-builder > waterline-utils > async > lodash:
+        patched: '2019-07-04T03:08:13.237Z'
